@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="https://cdn.bootcss.com/axios/0.19.0-beta.1/axios.min.js"></script>
+		<script src="jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			$.ajax({
+				type: 'POST',
+				url: '/deletegood',
+				data: {
+					// uid: '160703015',
+					// upwd:'378539',
+
+					// gname: 'req.body.gname',
+					// gdetails: 'req.body.gdetails',
+					// gprice: 'req.body.gprice',
+					// gtype:'日用',
+					// uid: 'req.body.uid',
+					
+					// obj:JSON.stringify({
+					// 	gprice: 'req.body.gprice',
+					// }),
+					
+					// uid:'160703015',
+					gid:'5daabf675c71cf4ef41546a0',
+					// amount:'3',
+					
+					
+				},
+				success: function(msg) {
+					console.log(msg);
+				}
+			});
+			
+		</script>
+
+
+		<!-- <form class="mui-input-group" id="form1">
+			<div class="mui-input-row">
+				<label>input</label>
+				<input type="file" name="inp_file1" id="inp_file1" />
+				<input type="button" id="btn" value="upload" />
+			</div>
+		</form>
+		<script type="text/javascript">
+			btn.onclick = function() {
+			var fd = new FormData(form1);
+				$.ajax({
+					url: '/uploadgoodimg?gid=5daabf675c71cf4ef41546a0',//
+					type: 'POST',
+					cache: false, // 不缓存此页面
+					processData: false, // 不编码上传内容
+					contentType: false, // 发送信息至服务器的编码
+					data: fd,
+					success: function(data) {
+						console.log(data)
+					}
+				});
+			}
+		</script> -->
+	</body>
+</html>
